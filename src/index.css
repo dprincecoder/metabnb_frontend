@@ -72,6 +72,10 @@ h5 {
   margin: 1rem 0;
 }
 
+.text-light-dark {
+  color: #bdbcbd;
+}
+
 .space-left-right {
   margin: 0 1rem;
 }
@@ -86,6 +90,10 @@ h5 {
 
 .space-top {
   margin-top: 1rem;
+}
+
+.cursor-point {
+  cursor: pointer;
 }
 
 .space-bottom {
@@ -110,6 +118,10 @@ section {
 
 .red-rose-font {
   font-family: "Red Rose", cursive;
+}
+
+.modal-head {
+  padding: 1rem 0;
 }
 
 .width-small-1 {
@@ -161,6 +173,10 @@ a:hover {
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
   color: #a02279 !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid #bdbcbd;
 }
 
 .bg-dark {

@@ -1,10 +1,21 @@
 import React from "react";
 import "./navbar.css";
 import Button from "../../form/Button";
-const Navbar = () => {
+const Navbar = ({ connectWallet }) => {
   const [showNav, setShowNav] = React.useState(false);
+  const [walletOpen, setWalletOpen] = React.useState(false);
+
+  const toggleWallet = (e) => {
+    // setWalletOpen(!walletOpen);
+    connectWallet("walletOpen");
+  };
+
   return (
-    <nav className={`nav nav-flex nav-items-center-between container ${showNav ? 'open-menu' : ''}`}>
+    <nav
+      className={`nav nav-flex nav-items-center-between container ${
+        showNav ? "open-menu" : ""
+      }`}
+    >
       <div className="nav-logo">
         <img
           src="assets/img/logo.svg"
@@ -41,11 +52,12 @@ const Navbar = () => {
         />
       </div>
       <Button
+        onClick={toggleWallet}
         text="Connect Wallet"
         classes="btn nav-main-btn btn-purple btn-rounded"
       />
       <div className="toggle-nav" onClick={() => setShowNav(!showNav)}>
-        <img src="assets/img/hamburger.png" alt="" className=""/>
+        <img src="assets/img/hamburger.png" alt="" className="" />
       </div>
     </nav>
   );
