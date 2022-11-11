@@ -138,6 +138,9 @@ section {
 .width-large-3 {
   width: 400px;
 }
+.width-large-4 {
+  width: 450px;
+}
 
 .color-purple {
   color: #a02279;
@@ -178,7 +181,7 @@ img {
 }
 
 .justify-center {
-  justify-content: center;
+  justify-items: center;
 }
 
 .flex-column {
@@ -229,12 +232,6 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   gap: 1rem;
-}
-
-.container-items-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 1rem;
 }
 
 /*===============  MEDIA QUERIES (SMALL DEVICES)  ============ */

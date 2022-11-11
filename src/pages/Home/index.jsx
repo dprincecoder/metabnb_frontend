@@ -3,16 +3,18 @@ import Clients from "../../components/Clients";
 import Hero from "../../components/Hero";
 import Inspiration from "../../components/Inpsiration";
 import Navbar from "../../components/Navbar";
+import NftTalk from "../../components/NftTalk";
 
-const index = () => {
+const Home = () => {
   return (
     <>
       <Navbar />
       <Hero />
       <Clients />
       <Inspiration />
+      <NftTalk />
     </>
   );
 };
 
-export default index;
+export default Home;
