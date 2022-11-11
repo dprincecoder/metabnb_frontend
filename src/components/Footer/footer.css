@@ -1,0 +1,34 @@
+footer h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+footer li {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 35px;
+}
+
+footer {
+  padding: 50px 0;
+}
+
+footer li a {
+  color: rgb(141, 138, 138) !important;
+}
+
+.socials li {
+  display: inline-block;
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+
+.logo_socials .logo {
+  margin-bottom: 4rem;
+}
+
+.copywrite {
+  color: rgb(141, 138, 138) !important;
+  font-size: 18px;
+}

@@ -160,6 +160,11 @@ a:hover {
   -moz-transition: var(--transition);
   -ms-transition: var(--transition);
   -o-transition: var(--transition);
+  color: #a02279 !important;
+}
+
+.bg-dark {
+  background: var(--color-bg-dark);
 }
 
 .width-full {

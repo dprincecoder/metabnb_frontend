@@ -1,5 +1,6 @@
 import React from "react";
 import Clients from "../../components/Clients";
+import Footer from "../../components/Footer";
 import Hero from "../../components/Hero";
 import Inspiration from "../../components/Inpsiration";
 import Navbar from "../../components/Navbar";
@@ -13,6 +14,7 @@ const Home = () => {
       <Clients />
       <Inspiration />
       <NftTalk />
+      <Footer />
     </>
   );
 };
