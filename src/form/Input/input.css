@@ -1,0 +1,62 @@
+.input-wrap {
+  position: relative;
+  margin-top: 4rem;
+}
+
+.input-wrap input {
+  border-bottom: 3px solid #49494b;
+  position: relative;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 1.2rem;
+  color: #23242a;
+  outline: none;
+  letter-spacing: 0.05em;
+  background: transparent;
+}
+
+.input-wrap .label-required {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  color: #037fff;
+  pointer-events: none;
+  color: #8f8f8f;
+  transition: 0.5s;
+}
+
+.input-wrap input:focus {
+  border-bottom: 3px solid #037fff;
+  transition: 0.5s;
+}
+
+.input-wrap input:focus ~ .label-required {
+  color: #037fff;
+  font-size: 1.2rem;
+  transform: translateY(-34px);
+  -webkit-transform: translateY(-34px);
+  -moz-transform: translateY(-34px);
+  -ms-transform: translateY(-34px);
+  -o-transform: translateY(-34px);
+}
+
+.required {
+  color: red;
+  font-size: 1.2rem;
+}
+
+.input-wrap input:not(:placeholder-shown) ~ .label-required {
+  font-size: 1.2rem;
+  color: #037fff;
+  transform: translateY(-34px);
+  -webkit-transform: translateY(-34px);
+  -moz-transform: translateY(-34px);
+  -ms-transform: translateY(-34px);
+  -o-transform: translateY(-34px);
+}
+
+.input-wrap input:not(:placeholder-shown) {
+  border-bottom: 3px solid green;
+}

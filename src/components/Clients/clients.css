@@ -1,0 +1,26 @@
+.clients {
+  padding: 0.8rem 0;
+}
+
+.clients-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-logo {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 0 1rem;
+}
+.clients img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+  .clients-logo {
+    max-width: 150px;
+  }
+}
