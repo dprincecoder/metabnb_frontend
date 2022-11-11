@@ -260,6 +260,10 @@ img {
   .container {
     width: var(--container-width-sm);
   }
+
+  .mobile-res {
+    width: 300px !important;
+  }
   section {
     margin-top: 2rem;
   }

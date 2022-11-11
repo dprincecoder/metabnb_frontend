@@ -26,6 +26,11 @@ export const Header = () => {
   const handleWalletOpen = () => setWalletOpen(true);
   const handleWalletClose = () => setWalletOpen(false);
 
+  const callbackFn = () => {
+    setShowNav(!showNav);
+    setWalletOpen(!walletOpen);
+  };
+
   return (
     <>
       <nav
@@ -65,6 +70,7 @@ export const Header = () => {
           </ul>
           <Button
             text="Connect Wallet"
+            onClick={callbackFn}
             classes="btn nav-with-btn btn-purple btn-rounded"
           />
         </div>
@@ -85,10 +91,13 @@ export const Header = () => {
           aria-labelledby="modal-modal-title"
           aria-describedby="modal-modal-description"
         >
-          <Box sx={style}>
+          <Box sx={style} className='mobile-res'>
             <div className="modal-head item-flex justify-between border-bottom width-full">
               <h3 className="red-rose-font space-left">Connect Wallet</h3>
-              <p onClick={handleWalletClose} className="space-left-right cursor-point">
+              <p
+                onClick={handleWalletClose}
+                className="space-left-right cursor-point"
+              >
                 X
               </p>
             </div>
