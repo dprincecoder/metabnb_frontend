@@ -1,5 +1,5 @@
 import React from "react";
-import CustomRoutes from "./routes/Routes";
+import CustomRoutes from "./Routes";
 import Home from "./pages/Home";
 function App() {
   return (

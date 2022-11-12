@@ -6,74 +6,82 @@ const data = [
   {
     id: 1,
     name: "Desert King",
-    img: "assets/img/desert-king1.svg",
+    img: "assets/img/desert-king1.png",
     desc: "1MBT per night",
     distance: "2345km away",
     rating: "assets/img/star-lite.svg",
     duration: "available for 2weeks stay",
+    fav: "assets/img/fav_heart.svg",
   },
   {
     id: 2,
     name: "Desert King",
-    img: "assets/img/desert-king2.svg",
+    img: "assets/img/desert-king2.png",
     desc: "1MBT per night",
     distance: "2345km away",
-    rating: "assets/img/star-lite.svg",
+    rating: "assets/img/star-lite.png",
     duration: "available for 2weeks stay",
+    fav: "assets/img/fav_heart.svg",
   },
   {
     id: 3,
     name: "Desert King",
-    img: "assets/img/desert-king3.svg",
+    img: "assets/img/desert-king3.png",
     desc: "1MBT per night",
     distance: "2345km away",
     rating: "assets/img/star-lite.svg",
     duration: "available for 2weeks stay",
+    fav: "assets/img/fav_heart.svg",
   },
   {
     id: 4,
     name: "Desert King",
-    img: "assets/img/desert-king4.svg",
+    img: "assets/img/desert-king4.png",
     desc: "1MBT per night",
     distance: "2345km away",
     rating: "assets/img/star-lite.svg",
     duration: "available for 2weeks stay",
+    fav: "assets/img/fav_heart.svg",
   },
   {
     id: 5,
     name: "Desert King",
-    img: "assets/img/desert-king5.svg",
+    img: "assets/img/desert-king5.png",
     desc: "1MBT per night",
     distance: "2345km away",
     rating: "assets/img/star-lite.svg",
     duration: "available for 2weeks stay",
+    fav: "assets/img/fav_heart.svg",
   },
   {
     id: 6,
     name: "Desert King",
-    img: "assets/img/desert-king6.svg",
+    img: "assets/img/desert-king6.png",
     desc: "1MBT per night",
     distance: "2345km away",
     rating: "assets/img/star-lite.svg",
     duration: "available for 2weeks stay",
+    fav: "assets/img/fav_heart.svg",
   },
   {
     id: 7,
     name: "Desert King",
-    img: "assets/img/desert-king7.svg",
+    img: "assets/img/desert-king7.png",
     desc: "1MBT per night",
     distance: "2345km away",
     rating: "assets/img/star-lite.svg",
     duration: "available for 2weeks stay",
+    fav: "assets/img/fav_heart.svg",
   },
   {
     id: 8,
     name: "Desert King",
-    img: "assets/img/desert-king8.svg",
+    img: "assets/img/desert-king8.png",
     desc: "1MBT per night",
     distance: "2345km away",
     rating: "assets/img/star-lite.svg",
     duration: "available for 2weeks stay",
+    fav: "assets/img/fav_heart.svg",
   },
 ];
 
@@ -91,6 +99,9 @@ const Inspiration = () => {
               alt={item.name}
               className="inspiration-data-img"
             />
+            <div className="fav-heart">
+              {/* <img src={item.fav} alt="favorite" className="fav_heart-img" /> */}
+            </div>
             <div className="data-img-grid-item-desc width-full space-up-down text-dark">
               <div className="item-flex items-center justify-between">
                 <h3 className="inspiration-data-title red-rose-font">

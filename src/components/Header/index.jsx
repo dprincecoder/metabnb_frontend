@@ -1,12 +1,10 @@
 import React from "react";
 import Button from "../../form/Button";
 import SearchInput from "../../form/SearchInput";
-import Hero from "../Hero";
 import "../Navbar/navbar.css";
 import "../Hero/hero.css";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
-import Typography from "@mui/material/Typography";
 
 const style = {
   position: "absolute",
@@ -23,7 +21,6 @@ const style = {
 export const Header = () => {
   const [showNav, setShowNav] = React.useState(false);
   const [walletOpen, setWalletOpen] = React.useState(false);
-  const handleWalletOpen = () => setWalletOpen(true);
   const handleWalletClose = () => setWalletOpen(false);
 
   const callbackFn = () => {
