@@ -1,10 +1,9 @@
 import React from "react";
-import Button from "../../form/Button";
-import SearchInput from "../../form/SearchInput";
-import "../Navbar/navbar.css";
-import "../Hero/hero.css";
+import "../../Navbar/navbar.css";
+import "../../Hero/hero.css";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
+import Button from "../../../form/Button";
 
 const style = {
   position: "absolute",
@@ -31,11 +30,11 @@ export const Header = () => {
   return (
     <>
       <nav
-        className={`nav sticky bg-light width-full   ${
+        className={`nav width-full bg-light sticky ${
           showNav ? "open-menu" : ""
         }`}
       >
-        <div className="container nav-items-center-between nav-flex ">
+        <div className="nav-flex nav-items-center-between container">
           <div className="nav-logo">
             <img
               src="assets/img/logo.svg"
@@ -56,12 +55,12 @@ export const Header = () => {
                 </a>
               </li>
               <li className="nav-list-item">
-                <a href="/nfts" className="nav-link">
+                <a href="nft" className="nav-link">
                   NFTs
                 </a>
               </li>
               <li className="nav-list-item">
-                <a href="/community" className="nav-link">
+                <a href="community" className="nav-link">
                   Community
                 </a>
               </li>
@@ -135,28 +134,6 @@ export const Header = () => {
             </div>
           </Box>
         </Modal>
-        <div className="container hero container-grid">
-          <div className="hero-text-content">
-            <h1 className="hero-main-text red-rose-font">
-              Rent a <strong className="color-purple">Place</strong> away from{" "}
-              <strong className="color-purple">Home</strong> in the{" "}
-              <strong className="color-purple">Metaverse</strong>
-            </h1>
-            <p className="red-rose-font space-round">
-              we provide you access to luxury and affordable houses in the
-              metaverse, get a chance to turn your imagination to reality at
-              your comfort zone
-            </p>
-            <SearchInput />
-          </div>
-          <div className="hero-image-content">
-            <img
-              src="assets/img/hero-banner.svg"
-              alt="hero banner"
-              className=""
-            />
-          </div>
-        </div>
       </div>
     </>
   );

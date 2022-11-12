@@ -1,6 +1,5 @@
 import React from "react";
 import ImgGallery from "../ImgGallery";
-import "./inspiration.css";
 
 //datas
 const data = [
@@ -84,17 +83,94 @@ const data = [
     duration: "available for 2weeks stay",
     fav: "assets/img/fav_heart.svg",
   },
+  {
+    id: 9,
+    name: "Desert King",
+    img: "assets/img/desert-king9.png",
+    desc: "1MBT per night",
+    distance: "2345km away",
+    rating: "assets/img/star-lite.svg",
+    duration: "available for 2weeks stay",
+    fav: "assets/img/fav_heart.svg",
+  },
+  {
+    id: 10,
+    name: "Desert King",
+    img: "assets/img/desert-king10.png",
+    desc: "1MBT per night",
+    distance: "2345km away",
+    rating: "assets/img/star-lite.svg",
+    duration: "available for 2weeks stay",
+    fav: "assets/img/fav_heart.svg",
+  },
+  {
+    id: 11,
+    name: "Desert King",
+    img: "assets/img/desert-king11.png",
+    desc: "1MBT per night",
+    distance: "2345km away",
+    rating: "assets/img/star-lite.svg",
+    duration: "available for 2weeks stay",
+    fav: "assets/img/fav_heart.svg",
+  },
+  {
+    id: 12,
+    name: "Desert King",
+    img: "assets/img/desert-king12.png",
+    desc: "1MBT per night",
+    distance: "2345km away",
+    rating: "assets/img/star-lite.svg",
+    duration: "available for 2weeks stay",
+    fav: "assets/img/fav_heart.svg",
+  },
+  {
+    id: 13,
+    name: "Desert King",
+    img: "assets/img/desert-king13.png",
+    desc: "1MBT per night",
+    distance: "2345km away",
+    rating: "assets/img/star-lite.svg",
+    duration: "available for 2weeks stay",
+    fav: "assets/img/fav_heart.svg",
+  },
+  {
+    id: 14,
+    name: "Desert King",
+    img: "assets/img/desert-king14.png",
+    desc: "1MBT per night",
+    distance: "2345km away",
+    rating: "assets/img/star-lite.svg",
+    duration: "available for 2weeks stay",
+    fav: "assets/img/fav_heart.svg",
+  },
+  {
+    id: 15,
+    name: "Desert King",
+    img: "assets/img/desert-king15.png",
+    desc: "1MBT per night",
+    distance: "2345km away",
+    rating: "assets/img/star-lite.svg",
+    duration: "available for 2weeks stay",
+    fav: "assets/img/fav_heart.svg",
+  },
+  {
+    id: 16,
+    name: "Desert King",
+    img: "assets/img/desert-king16.png",
+    desc: "1MBT per night",
+    distance: "2345km away",
+    rating: "assets/img/star-lite.svg",
+    duration: "available for 2weeks stay",
+    fav: "assets/img/fav_heart.svg",
+  },
 ];
 
-const Inspiration = () => {
+const PlaceToStayImg = () => {
   return (
-    <section className="container inspiration">
-      <h1 className="red-rose-font text-center">
-        Inspiration for your next adventure
-      </h1>
+    <div className="container space-top">
       <ImgGallery data={data} />
-    </section>
+    </div>
   );
 };
 
-export default Inspiration;
+export default PlaceToStayImg;

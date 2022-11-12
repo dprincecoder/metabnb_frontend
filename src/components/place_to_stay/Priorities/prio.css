@@ -1,0 +1,27 @@
+.setting__icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 15px;
+}
+
+.priorites li {
+  margin-right: 50px;
+  font-weight: 400;
+  font-size: 20px;
+  color: #434343;
+}
+
+.priorities__select {
+  background: linear-gradient(124.4deg, #ffffff 10.8%, #ffffff 87.34%);
+  border: 1px solid #b4b4b4;
+  width: 120px;
+  height: 40px;
+  border-radius: 8px;
+  padding: 1rem 8px;
+}
+
+.priorities__select p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #b4b4b4;
+}
