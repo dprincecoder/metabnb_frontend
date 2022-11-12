@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./progress.css";
 
 const WorkInProgress = () => {
@@ -21,6 +22,11 @@ const WorkInProgress = () => {
             className="inprogress1"
           />
         </div>
+      </div>
+      <div className="back-home bg-purple ">
+        <Link to="/" className="back-home-link">
+          Back to Home
+        </Link>
       </div>
     </div>
   );
