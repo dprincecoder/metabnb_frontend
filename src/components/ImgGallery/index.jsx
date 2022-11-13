@@ -1,21 +1,21 @@
 import React from "react";
 import "./gallery.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ImgGallery = ({ data }) => {
- 
   return (
     <div className="data-img img-grid-items-4">
       {data.map((item) => (
         <div className="data-img-grid-item" key={item.id}>
-          <img
+          <LazyLoadImage
+            key={item.id}
             src={item.img}
-loading='lazy'
             alt={item.name}
+            effect="blur"
+            placeholderSrc={item.img}
             className="inspiration-data-img"
           />
-          <div
-            className="fav-heart fav-active"
-          >
+          <div className="fav-heart fav-active">
             {/* <img src={item.fav} alt="favorite" className="fav_heart-img" /> */}
           </div>
           <div className="data-img-grid-item-desc width-full space-up-down text-dark">
