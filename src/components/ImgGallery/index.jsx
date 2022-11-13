@@ -9,6 +9,7 @@ const ImgGallery = ({ data }) => {
         <div className="data-img-grid-item" key={item.id}>
           <img
             src={item.img}
+loading='lazy'
             alt={item.name}
             className="inspiration-data-img"
           />
