@@ -69,24 +69,31 @@ nav {
   .responsive-navbar {
     position: absolute;
     top: -20rem;
-    left: 0;
-    width: 100%;
+    left: 1rem;
+
+    width: 90%;
     height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
+    background-color: var(--text-dark);
     align-items: center;
-    background-color: var(--color-bg-dark);
     z-index: 5;
     transition: all 0.5s ease-in-out;
     padding: 1rem 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
   }
   .responsive-navbar .nav-lists {
     flex-direction: column;
+    /* align-items: initial; */
   }
   .responsive-navbar .btn {
     margin: 1rem 0;
+    width: 80%;
   }
 
   .open-menu .responsive-navbar {
@@ -119,25 +126,33 @@ nav {
 @media screen and (min-width: 600px) and (max-width: 1024px) {
   .responsive-navbar {
     position: absolute;
-    top: -20rem;
-    left: 0;
-    width: 100%;
+    top: -22rem;
+    left: 5rem;
+    width: 80%;
     height: max-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     align-items: center;
-    background-color: var(--color-bg-dark);
+    background-color: var(--text-dark);
     z-index: 5;
     transition: all 0.5s ease-in-out;
     padding: 1rem 0;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
   }
   .responsive-navbar .nav-lists {
+    font-size: 2rem;
     flex-direction: column;
   }
+
   .responsive-navbar .btn {
     margin: 1rem 0;
+    width: 80%;
+    font-size: 1.5rem;
   }
 
   .open-menu .responsive-navbar {
